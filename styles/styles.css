@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    } 
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .parent2 {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      
+      .main {
+        flex-direction: column;
+        display: flex;
+        flex-grow: 1;
+      }
+      /* tablet */
+    @media screen and (min-width: 480px) {
+        .main {
+            flex-direction: row;
+        }
+    }
+     /* PC */
+    @media screen and (min-width: 850px) {
+        .parent2 {
+            margin-inline: 15% ;
+        }
+    }
+      
+      .contentsize {
+        flex-grow: 3;
+      }
+
+      .sidebarsize {
+        flex-grow: 1;
+      }
+
+      .herosize {
+        flex-grow: 1;
+      }
+      
+      .mainsize {
+        flex-grow: 2;
+      }
+        
+      /* --------- Non-flexbox related styles --------- */
+      .child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 20px;
+        color: white;
+        border-radius: 0 px;
+        border: 5px solid white;
+      }
+      
+      body {
+        background-color: #282c35;
+        font-family: Verdana;
+        font-weight: 600;
+      }
+      
+      .headercolor{
+        background-color: rgb(22, 175, 240);
+      }
+      .herocolor{
+        background-color:red ;
+      }
+      .contentcolor{
+        background-color:green;
+      }
+      .sidebarcolor{
+        background-color:purple ;
+      }
+      .footercolor{
+        background-color:grey;
+      }
